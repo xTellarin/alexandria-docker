@@ -62,6 +62,10 @@ You are now ready to use Alexandria. If you want to dive deeper on customization
 A: That means that your port 80 is already in use by another webserver. The same can happen with port 3306 for MySQL. In that case, open the `compose.yaml` file and change the port bindings on lines 9 and 23. 
 For example, change `80:80` to `8050:80` to free up port 80. Remember to point your browser to http://localhost:8050 if you do that!
 
+**Q: Do you have an image on the Docker Hub?**
+
+A: Yes, [I do.](https://hub.docker.com/r/tellarin/alexandria/tags). You can use `docker pull tellarin/alexandria:[tag]` to pull them, where `[tag]` is either **arm64** (Apple Silicon Macs and Raspberry Pis and equivalents) or **amd64** (Intel and AMD cpus). 
+> **NOTE:** unless you cannot run `docker compose`, there is no reason to use this method as you will have to deal with the MySQL bindings yourself!
 
 **Q: I've got other questions, how can I reach you?**
 
