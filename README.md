@@ -22,7 +22,7 @@ Once you're done, you can proceed to install Alexandria:
 
 Where you want on your system (your Documents folder is as good of a place as any), download the GitHub repository:  
 
-You can [download the code](https://github.com/xTellarin/alexandria-docker/releases/latest/alexandria-docker.zip)
+You can [download the code](https://github.com/xTellarin/alexandria-docker/releases/latest/download/alexandria-docker.zip)
 
 Or clone the repo for easy updates:
 ``` bash
