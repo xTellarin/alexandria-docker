@@ -2,12 +2,11 @@
 A Library to store bookmarks for comics, webnovels and animes.
 You can access the demo or use it permanently [here](https://public.tellarin.dev).
 
-![PHP requirements badge](https://img.shields.io/badge/php-7%20%7C%208%20%7C%208.1-purple)
 ![Hosting Badge](https://img.shields.io/badge/Hosting-Public%20%7C%20Self%20Hosted%20%7C%20Docker-blue)
 ![Development Status Badge](https://img.shields.io/badge/Development%20Status-Active-green)
 
 Welcome to Alexandria - Docker Edition. 
-The Library has been developed first and foremost for Linux systems, on a remote (VPS) or local (NAS with VM) server. If you don't have access to a server (VPS or NAS VM), I am maintaining this Docker image for use on your computer (or a NAS). 
+If you don't have access to a server (VPS or NAS VM), I am maintaining this Docker image for use on your computer (or a NAS). 
 
 If you want to see what it looks like in action, you can access the demo at the link above.
 
@@ -23,7 +22,7 @@ Once you're done, you can proceed to install Alexandria:
 
 Where you want on your system (your Documents folder is as good of a place as any), download the GitHub repository:  
 
-You can [download the code](https://github.com/xTellarin/alexandria-docker/archive/refs/heads/main.zip)
+You can [download the code](https://github.com/xTellarin/alexandria-docker/releases/latest/alexandria-docker.zip)
 
 Or clone the repo for easy updates:
 ``` bash
@@ -32,17 +31,28 @@ git clone https://github.com/xTellarin/alexandria-docker.git
 
 ## Running the app
 
-Open a terminal (`cd`) to the location where you downloaded / cloned Alexandria. Next, let's automatically download the required Docker images and start the app:
+Inside your `alexandria` folder, you'll find two `start` scripts to start Alexandria.
+On macOS and Linux systems, open a terminal and run 
+```bash
+bash ./start.sh
+```
+On Windows, double click the `start.bat` file.
+
+
+Alternatively, open a terminal (`cd`) to the location where you downloaded / cloned Alexandria. Then install and run the app with:
 ```bash
 docker compose up
 ```
 
 Congratulations, you are now running Alexandria on your [localhost:80](http://localhost:80).
 
-To start Alexandria in the future, just run the above command again in your folder.
+By default, Alexandria will start in the background. It's super efficient (using less than 1% of one core) so you can leave it running at all times. To stop it, use your Docker Desktop app to stop the container or open a terminal inside your folder and run `docker compose stop`.
+To start Alexandria in the future, just run the script again.
+
+
 # Usage
-When you head to Alexandria on your browser, you'll be greeted with the login page. I make use of the php sessions to check whether a user is identified or not. 
-So, go ahead and click *Create account*. Choose a username and password. The case (capital letters) doesn't matter for the username, so *Tellarin* and *tellarin* are the same. I prefer using a capital letter when I log in, but that's entirely up to you.
+When you head to Alexandria on your browser, you'll be greeted with the login page.
+Go ahead and click *Create account*. Choose a username and password. The case (capital letters) doesn't matter for the username, so *Tellarin* and *tellarin* are the same. I prefer using a capital letter when I log in, but that's entirely up to you.
 Once you've logged in, you'll see the splash / landing page. Not much to see here, so click the *Library button*. 
 
 Welcome to Alexandria. The Library is quite sparse to say the least, but not for long. Let's add your first bookmark. Click *Add a new record*.
@@ -55,7 +65,7 @@ Finally, remember that you can also filter by tag and team using the dedicated f
 
 # Other notes / FAQ
 
-You are now ready to use Alexandria. If you want to dive deeper on customization, I've got more (illustrated) documentation for you [on my blog](https://blog.tellarin.dev).
+You are now ready to use Alexandria. If you want to dive deeper on customization, I've got more (illustrated) documentation for you [on my blog](https://blog.tellarin.dev/alexandria).
 
 **Q: The app doesn't start: _Error starting userland proxy: listen tcp4 0.0.0.0:80_**
 
@@ -64,7 +74,7 @@ For example, change `80:80` to `8050:80` to free up port 80. Remember to point y
 
 **Q: Do you have an image on the Docker Hub?**
 
-A: Yes, [I do.](https://hub.docker.com/r/tellarin/alexandria/tags). You can use `docker pull tellarin/alexandria:[tag]` to pull them, where `[tag]` is either **arm64** (Apple Silicon Macs and Raspberry Pis and equivalents) or **amd64** (Intel and AMD cpus). 
+A: Yes, [I do](https://hub.docker.com/r/tellarin/alexandria/tags). You can use `docker pull tellarin/alexandria:[tag]` to pull them, where `[tag]` is either **arm64** (Apple Silicon Macs and Raspberry Pis and equivalents) or **amd64** (Intel and AMD cpus). 
 > **NOTE:** unless you cannot run `docker compose`, there is no reason to use this method as you will have to deal with the MySQL bindings yourself!
 
 **Q: I've got other questions, how can I reach you?**
