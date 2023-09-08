@@ -6,7 +6,7 @@ You can access the demo or use it permanently [here](https://public.tellarin.dev
 ![Development Status Badge](https://img.shields.io/badge/Development%20Status-Active-green)
 
 > *The Tianyi Ge, translated as Tianyi Pavilion or Tianyi Chamber, is a library and garden located in Ningbo, Zhejiang Province, China.[1] Founded in 1561 by Fan Qin during the Ming dynasty, it is the oldest existing private library in China.*
->   - Wikipedia
+>   \- Wikipedia
 
 Welcome to Tianyi - Docker Edition. 
 If you don't have access to a server (VPS or NAS VM), I am maintaining this Docker image for use on your computer (or a NAS). 
@@ -47,7 +47,7 @@ Alternatively, open a terminal (`cd`) to the location where you downloaded / clo
 docker compose up
 ```
 
-Congratulations, you are now running Tianyi on your [localhost:80](http://localhost:80).
+Congratulations, you are now running Tianyi! Just head to tianyi.tellarin.dev to access your instance.
 
 By default, Tianyi will start in the background. It's super efficient (using less than 1% of one core) so you can leave it running at all times. To stop it, use your Docker Desktop app to stop the container or open a terminal inside your folder and run `docker compose stop`.
 To start Tianyi in the future, just run the script again.
@@ -72,13 +72,17 @@ You are now ready to use Tianyi. If you want to dive deeper on customization, I'
 
 **Q: The app doesn't start: _Error starting userland proxy: listen tcp4 0.0.0.0:80_**
 
-A: That means that your port 80 is already in use by another webserver. The same can happen with port 3306 for MySQL. In that case, open the `compose.yaml` file and change the port bindings on lines 9 and 23. 
-For example, change `80:80` to `8050:80` to free up port 80. Remember to point your browser to http://localhost:8050 if you do that!
+A: That means that your port 5050 is already in use by another webserver. The same can happen with port 3306 for MySQL. In that case, open the `compose.yaml` file and change the port bindings on lines 9 and 23. 
+For example, change `5050:80` to `8050:80` to free up port 80. Remember to point your browser to http://localhost:8050 if you do that!
 
 **Q: Do you have an image on the Docker Hub?**
 
 A: Yes, [I do](https://hub.docker.com/r/tellarin/alexandria/tags). You can use `docker pull tellarin/alexandria:[tag]` to pull them, where `[tag]` is either **arm64** (Apple Silicon Macs and Raspberry Pis and equivalents) or **amd64** (Intel and AMD cpus). 
 > **NOTE:** unless you cannot run `docker compose`, there is no reason to use this method as you will have to deal with the MySQL bindings yourself!
+
+**Q: Why are you sending me to your website? I thought I was hosting Tianyi locally?**
+
+A: You are. When you visit tianyi.tellarin.dev, you browser is pointing to your Docker container. That's just a fancy and more memorable way to access Tianyi.
 
 **Q: I've got other questions, how can I reach you?**
 
