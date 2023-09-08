@@ -5,8 +5,10 @@ You can access the demo or use it permanently [here](https://public.tellarin.dev
 ![Hosting Badge](https://img.shields.io/badge/Hosting-Public%20%7C%20Self%20Hosted%20%7C%20Docker-blue)
 ![Development Status Badge](https://img.shields.io/badge/Development%20Status-Active-green)
 
-> *The Tianyi Ge, translated as Tianyi Pavilion or Tianyi Chamber, is a library and garden located in Ningbo, Zhejiang Province, China.[1] Founded in 1561 by Fan Qin during the Ming dynasty, it is the oldest existing private library in China.*
+> *The Tianyi Ge, translated as Tianyi Pavilion or Tianyi Chamber, is a library and garden located in Ningbo, Zhejiang Province, China. Founded in 1561 by Fan Qin during the Ming dynasty, it is the oldest existing private library in China.*
+>
 >   \- Wikipedia
+
 
 Welcome to Tianyi - Docker Edition. 
 If you don't have access to a server (VPS or NAS VM), I am maintaining this Docker image for use on your computer (or a NAS). 
