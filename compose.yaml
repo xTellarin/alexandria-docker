@@ -6,16 +6,16 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 80:80
+      - 5050:80
     volumes:
       - ./:/var/www/html/
   mysql:
     image: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: alexandria
-      MYSQL_DATABASE: alexandria
+      MYSQL_ROOT_PASSWORD: tianyi
+      MYSQL_DATABASE: tianyi
       MYSQL_USER: ax-worker
-      MYSQL_PASSWORD: alexandria
+      MYSQL_PASSWORD: tianyi
     volumes:
       - db_data:/var/lib/mysql
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql

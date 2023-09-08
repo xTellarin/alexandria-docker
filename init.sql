@@ -1,10 +1,10 @@
-CREATE TABLE IF NOT EXISTS alexandria.users(  
+CREATE TABLE IF NOT EXISTS tianyi.users(  
     id INT AUTO_INCREMENT PRIMARY KEY,  
     username VARCHAR(50),  
     password VARCHAR(255)
 );
 
-CREATE TABLE IF NOT EXISTS alexandria.records(  
+CREATE TABLE IF NOT EXISTS tianyi.records(  
     id INT AUTO_INCREMENT PRIMARY KEY,  
     title VARCHAR(255),  
     rating VARCHAR(255),  

@@ -5,7 +5,10 @@ You can access the demo or use it permanently [here](https://public.tellarin.dev
 ![Hosting Badge](https://img.shields.io/badge/Hosting-Public%20%7C%20Self%20Hosted%20%7C%20Docker-blue)
 ![Development Status Badge](https://img.shields.io/badge/Development%20Status-Active-green)
 
-Welcome to Alexandria - Docker Edition. 
+> *The Tianyi Ge, translated as Tianyi Pavilion or Tianyi Chamber, is a library and garden located in Ningbo, Zhejiang Province, China.[1] Founded in 1561 by Fan Qin during the Ming dynasty, it is the oldest existing private library in China.*
+>   - Wikipedia
+
+Welcome to Tianyi - Docker Edition. 
 If you don't have access to a server (VPS or NAS VM), I am maintaining this Docker image for use on your computer (or a NAS). 
 
 If you want to see what it looks like in action, you can access the demo at the link above.
@@ -14,24 +17,24 @@ If you want to see what it looks like in action, you can access the demo at the 
 
 [Docker Desktop](https://www.docker.com/products/docker-desktop/) makes things easier to manage, and installs the Docker Engine for you as well, so I recommend downloading it.
 
-Once you're done, you can proceed to install Alexandria:
+Once you're done, you can proceed to install Tianyi:
 - Cloning the repo
 - Downloading the requirements and starting the Library
 
-## Clone / Download Alexandria
+## Clone / Download Tianyi
 
 Where you want on your system (your Documents folder is as good of a place as any), download the GitHub repository:  
 
-You can [download the code](https://github.com/xTellarin/alexandria-docker/releases/latest/download/alexandria-docker.zip)
+You can [download the code](https://github.com/xTellarin/tianyi-docker/releases/latest/download/tianyi-docker.zip)
 
 Or clone the repo for easy updates:
 ``` bash
-git clone https://github.com/xTellarin/alexandria-docker.git
+git clone https://github.com/xTellarin/tianyi-docker.git
 ```
 
 ## Running the app
 
-Inside your `alexandria` folder, you'll find two `start` scripts to start Alexandria.
+Inside your `tianyi` folder, you'll find two `start` scripts to start Tianyi.
 On macOS and Linux systems, open a terminal and run 
 ```bash
 bash ./start.sh
@@ -39,23 +42,23 @@ bash ./start.sh
 On Windows, double click the `start.bat` file.
 
 
-Alternatively, open a terminal (`cd`) to the location where you downloaded / cloned Alexandria. Then install and run the app with:
+Alternatively, open a terminal (`cd`) to the location where you downloaded / cloned Tianyi. Then install and run the app with:
 ```bash
 docker compose up
 ```
 
-Congratulations, you are now running Alexandria on your [localhost:80](http://localhost:80).
+Congratulations, you are now running Tianyi on your [localhost:80](http://localhost:80).
 
-By default, Alexandria will start in the background. It's super efficient (using less than 1% of one core) so you can leave it running at all times. To stop it, use your Docker Desktop app to stop the container or open a terminal inside your folder and run `docker compose stop`.
-To start Alexandria in the future, just run the script again.
+By default, Tianyi will start in the background. It's super efficient (using less than 1% of one core) so you can leave it running at all times. To stop it, use your Docker Desktop app to stop the container or open a terminal inside your folder and run `docker compose stop`.
+To start Tianyi in the future, just run the script again.
 
 
 # Usage
-When you head to Alexandria on your browser, you'll be greeted with the login page.
+When you head to Tianyi on your browser, you'll be greeted with the login page.
 Go ahead and click *Create account*. Choose a username and password. The case (capital letters) doesn't matter for the username, so *Tellarin* and *tellarin* are the same. I prefer using a capital letter when I log in, but that's entirely up to you.
 Once you've logged in, you'll see the splash / landing page. Not much to see here, so click the *Library button*. 
 
-Welcome to Alexandria. The Library is quite sparse to say the least, but not for long. Let's add your first bookmark. Click *Add a new record*.
+Welcome to Tianyi. The Library is quite sparse to say the least, but not for long. Let's add your first bookmark. Click *Add a new record*.
 Fill in the fields with the details of the comic / novel / anime you'd like to save.  Note that 'Team' refers to the Author or the Translator. Which one you want to use is up to you. You can filter on this field too so choose wisely, and most importantly, stay consistent. You will always be able to change it later if you need. Click *Submit* when you're done.
 
 Congratulation! Your first entry now populates your library. Notice how the 'Last Read On' field is automatically filled with today's date. It's convenient to see how much time has passed since you last read / watched your bookmark. 
@@ -65,7 +68,7 @@ Finally, remember that you can also filter by tag and team using the dedicated f
 
 # Other notes / FAQ
 
-You are now ready to use Alexandria. If you want to dive deeper on customization, I've got more (illustrated) documentation for you [on my blog](https://blog.tellarin.dev/alexandria).
+You are now ready to use Tianyi. If you want to dive deeper on customization, I've got more (illustrated) documentation for you [on my blog](https://blog.tellarin.dev/tianyi).
 
 **Q: The app doesn't start: _Error starting userland proxy: listen tcp4 0.0.0.0:80_**
 
@@ -83,6 +86,6 @@ A: You can send me a message on Discord (Tellarin#0069) or [send me an email](ma
 
 Feel free to submit Pull Requests if there's something you'd like to improve, an Issue if something is wrong (read the Installation paragraph thoroughly first) or create a new Discussion for other things you'd like to share. 
 
-Thank you for using Alexandria!
+Thank you for using Tianyi!
 
 \- Tellarin
