@@ -49,7 +49,7 @@ Alternatively, open a terminal (`cd`) to the location where you downloaded / clo
 docker compose up
 ```
 
-Congratulations, you are now running Tianyi! Just head to (http://tianyi.tellarin.dev)[http://tianyi.tellarin.dev] to access your instance.
+Congratulations, you are now running Tianyi! Just head to [http://tianyi.tellarin.dev](http://tianyi.tellarin.dev) to access your instance.
 
 By default, Tianyi will start in the background. It's super efficient (using less than 1% of one core) so you can leave it running at all times. To stop it, use your Docker Desktop app to stop the container or open a terminal inside your folder and run `docker compose stop`.
 To start Tianyi in the future, just run the script again.
@@ -75,7 +75,7 @@ You are now ready to use Tianyi. If you want to dive deeper on customization, I'
 **Q: The app doesn't start: _Error starting userland proxy: listen tcp4 0.0.0.0:80_**
 
 A: That means that your port 5050 is already in use by another webserver. The same can happen with port 3306 for MySQL. In that case, open the `compose.yaml` file and change the port bindings on lines 9 and 23. 
-For example, change `5050:80` to `8050:80` to free up port 80. Remember to point your browser to http://localhost:8050 if you do that!
+For example, change `5050:80` to `8050:80` to free up port 80. Remember to point your browser to http://localhost:8050 if you do that! You also won't be able to use the tianyi.tellarin.dev URL anymore.
 
 **Q: Do you have an image on the Docker Hub?**
 
