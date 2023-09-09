@@ -27,7 +27,7 @@ Once you're done, you can proceed to install Tianyi:
 
 Where you want on your system (your Documents folder is as good of a place as any), download the GitHub repository:  
 
-You can [download the code](https://github.com/xTellarin/tianyi-docker/releases/latest/download/tianyi-docker.zip)
+You can [download the code](https://github.com/xTellarin/alexandria-docker/releases/latest),
 
 Or clone the repo for easy updates:
 ``` bash
@@ -79,7 +79,7 @@ For example, change `5050:80` to `8050:80` to free up port 80. Remember to point
 
 **Q: Do you have an image on the Docker Hub?**
 
-A: Yes, [I do](https://hub.docker.com/r/tellarin/alexandria/tags). You can use `docker pull tellarin/alexandria:[tag]` to pull them, where `[tag]` is either **arm64** (Apple Silicon Macs and Raspberry Pis and equivalents) or **amd64** (Intel and AMD cpus). 
+A: Yes, [I do](https://hub.docker.com/r/tellarin/alexandria/tags). You can use `docker pull tellarin/alexandria:[tag]` to pull them, where `[tag]` is either **arm64** (Apple Silicon Macs and Raspberry Pis and equivalents) or **amd64** (Intel and AMD cpus). Don't expect much suport though.
 > **NOTE:** unless you cannot run `docker compose`, there is no reason to use this method as you will have to deal with the MySQL bindings yourself!
 
 **Q: Why are you sending me to your website? I thought I was hosting Tianyi locally?**
