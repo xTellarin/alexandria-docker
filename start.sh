@@ -11,6 +11,6 @@ if [[ $docker_output == *"ERROR"* ]]; then
     echo $docker_output
 else
   echo "App started successfully"
-  echo "You can access the app at http://localhost:80 by default."
+  echo "You can access the app at http://tianyi.tellarin.dev"
   echo "Use 'docker compose stop' to stop the app."
 fi

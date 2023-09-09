@@ -49,7 +49,7 @@ Alternatively, open a terminal (`cd`) to the location where you downloaded / clo
 docker compose up
 ```
 
-Congratulations, you are now running Tianyi! Just head to tianyi.tellarin.dev to access your instance.
+Congratulations, you are now running Tianyi! Just head to (http://tianyi.tellarin.dev)[http://tianyi.tellarin.dev] to access your instance.
 
 By default, Tianyi will start in the background. It's super efficient (using less than 1% of one core) so you can leave it running at all times. To stop it, use your Docker Desktop app to stop the container or open a terminal inside your folder and run `docker compose stop`.
 To start Tianyi in the future, just run the script again.
@@ -84,7 +84,7 @@ A: Yes, [I do](https://hub.docker.com/r/tellarin/alexandria/tags). You can use `
 
 **Q: Why are you sending me to your website? I thought I was hosting Tianyi locally?**
 
-A: You are. When you visit tianyi.tellarin.dev, you browser is pointing to your Docker container. That's just a fancy and more memorable way to access Tianyi.
+A: You are. When you visit tianyi.tellarin.dev, your browser is pointing to your Docker container. That's just a fancy and more memorable way to access Tianyi.
 
 **Q: I've got other questions, how can I reach you?**
 
